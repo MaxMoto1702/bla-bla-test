@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-md-4">
+        <dl class="dl-horizontal">
+            <dt>Deferred</dt>
+            <dd>{{vm.deferred}}</dd>
+
+            <dt>Promise</dt>
+            <dd>{{vm.deferred.promise}}</dd>
+
+            <dt>Var 1</dt>
+            <dd>{{vm.var1}}</dd>
+
+            <dt>Var 2</dt>
+            <dd>{{vm.var2}}</dd>
+
+            <dt>Root scope Var</dt>
+            <dd>{{rootScopeVar}}</dd>
+
+            <dt>Root scope notifications</dt>
+            <dd>{{notifications}}</dd>
+
+            <dt>Root scope global</dt>
+            <dd>{{global}}</dd>
+        </dl>
+    </div>
+    <div class="col-md-4">
+        <dl class="dl-horizontal">
+            <dt>Item</dt>
+            <dd>{{vm.item}}</dd>
+
+            <dt>Item ID</dt>
+            <dd>{{vm.item.id}}</dd>
+
+            <dt>Item Name</dt>
+            <dd>{{vm.item.name}}</dd>
+        </dl>
+    </div>
+    <div class="col-md-4">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in vm.list">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

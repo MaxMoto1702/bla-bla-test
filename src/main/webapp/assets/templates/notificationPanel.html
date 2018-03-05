@@ -1,0 +1,9 @@
+<div class="row">
+    <div class="col-md-12">
+        <div uib-alert ng-repeat="notification in vm.notifications"
+             ng-class="'alert-' + (notification.type || 'warning')"
+             close="vm.closeAlert($index)">
+            {{notification.message}}
+        </div>
+    </div>
+</div>
